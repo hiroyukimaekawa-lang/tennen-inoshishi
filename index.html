@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="天然いのしし - 神奈川県横須賀市のジビエ・希少食材専門店。韓国カンジャンセウ、ウツボ、ふたえ桜など限られた場所でしか味わえない特別な料理を提供。">
-    <title>天然いのしし | ジビエ・希少食材専門店</title>
+    <meta name="description" content="天然いのしし - 神奈川県横須賀市衣笠のジビエ・希少食材専門店。いのしし、カンジャンセウ、ウツボ、ふたえ桜など限られた場所でしか味わえない特別な料理を提供。">
+    <meta name="keywords" content="天然いのしし, ジビエ, 横須賀, 衣笠, いのしし, カンジャンセウ, ウツボ, ふたえ桜, 馬肉, 居酒屋">
+    <title>天然いのしし | ジビエ・希少食材専門店 | 横須賀市衣笠</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- HERO Section -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="images/hero.jpg" alt="天然いのしし 店内" id="hero-img">
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="header-logo">天然いのしし</a>
+            <nav class="header-nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#concept" class="nav-link">CONCEPT</a></li>
+                    <li><a href="#food" class="nav-link">FOOD</a></li>
+                    <li><a href="#seat" class="nav-link">SEAT</a></li>
+                    <li><a href="#access" class="nav-link">ACCESS</a></li>
+                    <li><a href="#reservation" class="nav-link reservation-link">ご予約</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </header>
+
+    <!-- HERO Section -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="img/store1.jpg" alt="天然いのしし 店舗外観" id="hero-img">
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">天然いのしし</h1>
+            <p class="hero-subtitle">ジビエ・希少食材専門店</p>
+            <h1 class="hero-title">
+                <span class="title-vertical">天然いのしし</span>
+            </h1>
             <p class="hero-copy">限られた場所でしか味わえない<br>特別な食体験へ</p>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll</span>
+            <span class="scroll-text">Scroll</span>
+            <span class="scroll-line"></span>
         </div>
     </section>
 
     <!-- CONCEPT Section -->
     <section class="concept section" id="concept">
         <div class="container">
-            <h2 class="section-title fade-in">CONCEPT</h2>
-            <div class="concept-content fade-in">
-                <p class="concept-text">
-                    幅広い年齢層が食を楽しめる店として、<br class="sp-only">
-                    天然いのししは日々営業しております。
-                </p>
-                <p class="concept-text">
-                    ジビエの中でも流通量の少ない<br class="sp-only">
-                    <strong>韓国カンジャンセウ</strong>や<strong>ウツボ</strong>、<br class="sp-only">
-                    そして<strong>「ふたえ桜」</strong>という希少な馬肉を取り扱い、<br class="sp-only">
-                    限られた場所でしか味わえない<br class="sp-only">
-                    特別な料理を提供しています。
-                </p>
-                <p class="concept-text">
-                    食材へのこだわりと、<br class="sp-only">
-                    丁寧な調理でお客様をお迎えします。
-                </p>
+            <div class="section-header fade-in">
+                <span class="section-label">CONCEPT</span>
+                <h2 class="section-title">こだわり</h2>
+            </div>
+            <div class="concept-grid">
+                <div class="concept-image fade-in">
+                    <img src="./img/store3.jpg" alt="天然いのしし 店内カウンター">
+                </div>
+                <div class="concept-content fade-in">
+                    <p class="concept-text lead">
+                        幅広い年齢層が食を楽しめる店として、<br class="pc-only">
+                        天然いのししは日々営業しております。
+                    </p>
+                    <p class="concept-text">
+                        ジビエの中でも流通量の少ない<strong>韓国カンジャンセウ</strong>や<strong>ウツボ</strong>、
+                        そして<strong>「ふたえ桜」</strong>という希少な馬肉を取り扱い、
+                        限られた場所でしか味わえない特別な料理を提供しています。
+                    </p>
+                    <p class="concept-text">
+                        食材へのこだわりと、丁寧な調理で<br class="pc-only">
+                        お客様をお迎えします。
+                    </p>
+                    <div class="concept-badge">
+                        <span class="badge-text">全国ジビエフェア登録店舗</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -49,58 +91,105 @@
     <!-- FOOD / MENU Section -->
     <section class="food section" id="food">
         <div class="container">
-            <h2 class="section-title fade-in">FOOD</h2>
-            
-            <div class="food-item fade-in">
-                <div class="food-image">
-                    <img src="images/food-gibier.jpg" alt="ジビエ料理">
+            <div class="section-header fade-in">
+                <span class="section-label">FOOD</span>
+                <h2 class="section-title">お料理</h2>
+            </div>
+
+            <div class="food-gallery">
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food4.jpg" alt="いのししヒレのバルサミコ&カカオ">
+                        <div class="food-overlay">
+                            <span class="food-name">いのししヒレの<br>バルサミコ&カカオ</span>
+                            <span class="food-tag">名物</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="food-content">
-                    <h3 class="food-title">ジビエ</h3>
-                    <p class="food-description">
-                        流通量の少ない希少なジビエを厳選しております。<br>
-                        特に<strong>韓国カンジャンセウ</strong>と<strong>ウツボ</strong>は、<br class="sp-only">
-                        限られた場所でしか味わえない特別な食材です。<br>
-                        丁寧に調理された一品一品が、<br class="sp-only">
-                        自然の恵みを存分に味わえる逸品となっています。
-                    </p>
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food2.jpg" alt="カンジャンセウ">
+                        <div class="food-overlay">
+                            <span class="food-name">カンジャンセウ</span>
+                            <span class="food-tag">希少</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food3.jpg" alt="ウツボ刺身">
+                        <div class="food-overlay">
+                            <span class="food-name">ウツボ刺身</span>
+                            <span class="food-tag">希少</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food5.jpg" alt="ふたえ桜（馬刺し）">
+                        <div class="food-overlay">
+                            <span class="food-name">ふたえ桜</span>
+                            <span class="food-tag">馬刺し</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food1.jpg" alt="揚げ出し豆腐風">
+                        <div class="food-overlay">
+                            <span class="food-name">揚げ出し豆腐風</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item fade-in">
+                    <div class="food-image-wrapper">
+                        <img src="img/food7.jpg" alt="ムール貝">
+                        <div class="food-overlay">
+                            <span class="food-name">ムール貝</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="food-item fade-in reverse">
-                <div class="food-image">
-                    <img src="images/food-horse.jpg" alt="ふたえ桜 馬肉">
-                </div>
-                <div class="food-content">
-                    <h3 class="food-title">ふたえ桜</h3>
-                    <p class="food-description">
-                        希少な馬肉「ふたえ桜」を取り扱っております。<br>
-                        厳選された馬肉の旨味と食感を、<br class="sp-only">
-                        当店ならではの調理法でお楽しみいただけます。<br>
-                        特別な日に、特別な味覚体験をお約束します。
-                    </p>
-                </div>
-            </div>
+            <p class="food-note fade-in">※仕入れ状況により、メニューは変更となる場合がございます。</p>
         </div>
     </section>
 
     <!-- SEAT / SPACE Section -->
     <section class="seat section" id="seat">
         <div class="container">
-            <h2 class="section-title fade-in">SEAT</h2>
-            <div class="seat-image fade-in">
-                <img src="images/seat.jpg" alt="店内 カウンター席">
+            <div class="section-header fade-in">
+                <span class="section-label">SEAT</span>
+                <h2 class="section-title">店内</h2>
             </div>
-            <div class="seat-info fade-in">
-                <p class="seat-total">全14席</p>
-                <div class="seat-details">
-                    <p class="seat-item">カウンター席：6席</p>
-                    <p class="seat-item">テーブル席：8席</p>
+            <div class="seat-content">
+                <div class="seat-image fade-in">
+                    <img src="img/store-inside.jpg" alt="店内 カウンター席">
                 </div>
-                <p class="seat-description">
-                    落ち着いた空間で、<br class="sp-only">
-                    ゆっくりとお食事をお楽しみいただけます。
-                </p>
+                <div class="seat-info fade-in">
+                    <div class="seat-total">
+                        <span class="seat-number">14</span>
+                        <span class="seat-unit">席</span>
+                    </div>
+                    <div class="seat-details">
+                        <div class="seat-item">
+                            <span class="seat-type">カウンター席</span>
+                            <span class="seat-count">6席</span>
+                        </div>
+                        <div class="seat-item">
+                            <span class="seat-type">テーブル席</span>
+                            <span class="seat-count">8席</span>
+                        </div>
+                    </div>
+                    <p class="seat-description">
+                        落ち着いた空間で、<br>
+                        ゆっくりとお食事をお楽しみいただけます。
+                    </p>
+                    <div class="seat-tags">
+                        <span class="seat-tag">喫煙可</span>
+                        <span class="seat-tag">貸切可（20名以下）</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -108,44 +197,69 @@
     <!-- ACCESS Section -->
     <section class="access section" id="access">
         <div class="container">
-            <h2 class="section-title fade-in">ACCESS</h2>
+            <div class="section-header fade-in">
+                <span class="section-label">ACCESS</span>
+                <h2 class="section-title">店舗情報</h2>
+            </div>
             <div class="access-content fade-in">
                 <div class="access-info">
-                    <div class="info-item">
-                        <h3 class="info-label">住所</h3>
-                        <p class="info-text">
-                            〒238-0031<br>
-                            神奈川県横須賀市衣笠栄町１丁目４<br>
-                            渋谷ビル 2階
-                        </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h3 class="info-label">住所</h3>
+                            <p class="info-text">
+                                〒238-0031<br>
+                                神奈川県横須賀市衣笠栄町1-4<br>
+                                渋谷ビル 2F
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3 class="info-label">アクセス</h3>
+                            <p class="info-text">
+                                衣笠駅から徒歩5分<br>
+                                <span class="info-sub">バス停「衣笠十字路」から徒歩1分</span>
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3 class="info-label">営業時間</h3>
+                            <p class="info-text">
+                                月・火・水・金・土・日・祝<br>
+                                14:00〜21:00<br>
+                                <span class="info-note">※21:00前にご来店の場合は23:00まで営業</span>
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3 class="info-label">定休日</h3>
+                            <p class="info-text">木曜日</p>
+                        </div>
+                        <div class="info-item">
+                            <h3 class="info-label">電話番号</h3>
+                            <p class="info-text">
+                                <a href="tel:080-3915-3920" class="tel-link">080-3915-3920</a>
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3 class="info-label">ご予算</h3>
+                            <p class="info-text">
+                                夜 ¥4,000〜¥4,999<br>
+                                昼 ¥3,000〜¥3,999
+                            </p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <h3 class="info-label">最寄駅</h3>
-                        <p class="info-text">衣笠駅から徒歩5分</p>
-                    </div>
-                    <div class="info-item">
-                        <h3 class="info-label">営業時間</h3>
-                        <p class="info-text">
-                            水・金・土・日・月・火<br>
-                            14:00〜21:00<br>
-                            <span class="info-note">※お客様がいる場合は23:00まで営業</span>
-                        </p>
-                    </div>
-                    <div class="info-item">
-                        <h3 class="info-label">定休日</h3>
-                        <p class="info-text">木曜日</p>
+
+                    <div class="payment-info">
+                        <h3 class="info-label">お支払い方法</h3>
+                        <div class="payment-list">
+                            <span class="payment-item">クレジットカード（VISA / Master / JCB / AMEX / Diners）</span>
+                            <span class="payment-item">電子マネー（Suica等 / 楽天Edy / nanaco / WAON / iD / QUICPay）</span>
+                            <span class="payment-item">QR決済（PayPay / d払い / 楽天ペイ / au PAY）</span>
+                        </div>
                     </div>
                 </div>
                 <div class="map-wrapper">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.1234567890123!2d139.6123456!3d35.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE0JzA0LjQiTiAxMznCsDM2JzQ0LjQiRQ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.1234567890123!2d139.6619!3d35.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5pel5pys44GR5LqG44KJ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="google-map">
                     </iframe>
                 </div>
             </div>
@@ -155,22 +269,26 @@
     <!-- RESERVATION Section -->
     <section class="reservation section" id="reservation">
         <div class="container">
-            <h2 class="section-title fade-in">RESERVATION</h2>
+            <div class="section-header fade-in">
+                <span class="section-label">RESERVATION</span>
+                <h2 class="section-title">ご予約</h2>
+            </div>
             <div class="reservation-content fade-in">
                 <p class="reservation-text">
-                    ご予約は食べログから承っております。<br class="sp-only">
-                    お電話でのご予約も可能です。
+                    ご予約はお電話、または各グルメサイトから承っております。
                 </p>
                 <div class="reservation-buttons">
-                    <a href="https://tabelog.com/kanagawa/A1406/A140601/14093888/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="btn btn-primary">
-                        食べログで予約する
-                    </a>
-                    <a href="tel:080-3915-3920" class="btn btn-secondary">
+                    <a href="tel:080-3915-3920" class="btn btn-tel">
                         <span class="btn-icon">📞</span>
-                        080-3915-3920
+                        <span class="btn-text">080-3915-3920</span>
+                    </a>
+                    <a href="https://www.hotpepper.jp/strJ001217912/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">
+                        ホットペッパーで予約
+                    </a>
+                    <a href="https://tabelog.com/kanagawa/A1406/A140601/14093888/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-secondary">
+                        食べログで予約
                     </a>
                 </div>
             </div>
@@ -185,40 +303,59 @@
                     <h2 class="footer-title">天然いのしし</h2>
                     <p class="footer-address">
                         〒238-0031<br>
-                        神奈川県横須賀市衣笠栄町１丁目４ 渋谷ビル 2階
+                        神奈川県横須賀市衣笠栄町1-4 渋谷ビル 2F
                     </p>
                     <p class="footer-tel">
                         <a href="tel:080-3915-3920">TEL: 080-3915-3920</a>
                     </p>
                 </div>
-                <div class="footer-sns">
-                    <h3 class="footer-sns-title">SNS</h3>
-                    <ul class="sns-list">
-                        <li>
-                            <a href="https://www.instagram.com/shohei_araki/" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="sns-link">
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.tiktok.com/@tenneninoshishi" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="sns-link">
-                                TikTok
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3 class="footer-nav-title">MENU</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#concept">CONCEPT</a></li>
+                            <li><a href="#food">FOOD</a></li>
+                            <li><a href="#seat">SEAT</a></li>
+                            <li><a href="#access">ACCESS</a></li>
+                            <li><a href="#reservation">RESERVATION</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sns">
+                        <h3 class="footer-sns-title">FOLLOW US</h3>
+                        <ul class="sns-list">
+                            <li>
+                                <a href="https://www.instagram.com/tenneninosisi" target="_blank"
+                                    rel="noopener noreferrer" class="sns-link">
+                                    <span class="sns-icon">📷</span>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@tenneninoshishi" target="_blank"
+                                    rel="noopener noreferrer" class="sns-link">
+                                    <span class="sns-icon">🎵</span>
+                                    TikTok
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <p class="footer-copyright">
-                &copy; 2024 天然いのしし All Rights Reserved.
-            </p>
+            <div class="footer-bottom">
+                <div class="footer-badges">
+                    <a href="https://www.gibier-fair.jp/restaurant/7d68d167546b09c/" target="_blank"
+                        rel="noopener noreferrer" class="gibier-badge">
+                        全国ジビエフェア登録店舗
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2024 天然いのしし All Rights Reserved.
+                </p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
